@@ -29,5 +29,19 @@ public class BookRestController {
 		return "books";
 
 	}
+	Bug 124
+	@GetMapping("/book")
+	public String getbooksData(Model model) {
+		Books b1 = new Books(101, "Java", 855.00);
+		Books b2 = new Books(112, ".Net", 700.00);
+		Books b3 = new Books(103, "Python", 600.00);
+		Books b4 = new Books(104, "C#", 450.00);
+		List<Books> booksList = Arrays.asList(b1, b2, b3, b4);
+		model.addAttribute("books", booksList);
+		return "books";
+
+	}
+
+	
 
 }
