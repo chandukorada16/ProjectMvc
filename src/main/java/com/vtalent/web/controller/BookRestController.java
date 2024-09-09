@@ -29,8 +29,12 @@ public class BookRestController {
 		return "books";
 
 	}
+<<<<<<< Updated upstream
 	Bug 124
 	@GetMapping("/book")
+=======
+	/*@GetMapping("/book")
+>>>>>>> Stashed changes
 	public String getbooksData(Model model) {
 		Books b1 = new Books(101, "Java", 855.00);
 		Books b2 = new Books(112, ".Net", 700.00);
@@ -40,8 +44,13 @@ public class BookRestController {
 		model.addAttribute("books", booksList);
 		return "books";
 
+<<<<<<< Updated upstream
 	}
 
 	
+=======
+	}*/
+		
+>>>>>>> Stashed changes
 
 }
