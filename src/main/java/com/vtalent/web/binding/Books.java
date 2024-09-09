@@ -4,7 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor//@Getter
+//@Getter
+@AllArgsConstructor//RequiredConstructor
 public class Books {
 	
 	private Integer bookId;
